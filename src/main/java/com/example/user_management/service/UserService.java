@@ -24,11 +24,11 @@ public class UserService {
 
     }
 
-    public void update(){
+    public void update(Long id, User user){
         
     }
 
-    public void delete(){
+    public void delete(Long id){
 
     }
 
