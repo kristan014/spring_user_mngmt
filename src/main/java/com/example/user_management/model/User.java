@@ -31,7 +31,8 @@ public class User {
     @Column(name = "updated_at")
     private LocalDate updated_at;
 
-    public User() {}
+    public User() {
+    }
 
     public User(
             Long id,
@@ -41,7 +42,7 @@ public class User {
             LocalDate updated_at) {
         this.id = id;
         this.userName = userName;
-        this.userName = userName;
+        this.password = password;
         this.created_at = created_at;
         this.updated_at = updated_at;
 
@@ -53,9 +54,17 @@ public class User {
             LocalDate created_at,
             LocalDate updated_at) {
         this.userName = userName;
-        this.userName = userName;
+        this.password = password;
         this.created_at = created_at;
         this.updated_at = updated_at;
 
     }
+
+    public long getId() {
+        return id;
+    }
+
+    // public void setId(Long id) {
+    //     this.id = id;
+    // }
 }
