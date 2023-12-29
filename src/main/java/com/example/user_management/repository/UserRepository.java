@@ -7,5 +7,6 @@ import com.example.user_management.model.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long>{
-    
+    // Optional<User> findStudentByUserName(String userName);
+    // Optional<User> findStudentById(Long id);
 }
